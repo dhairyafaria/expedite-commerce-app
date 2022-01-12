@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <ExpediteCommerce />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import ExpediteCommerce from './components/ExpediteCommerce.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    ExpediteCommerce,
   },
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0px;
+  .container {
+    background-color: #333333;
+    padding: 30px;
+  }
 }
 </style>

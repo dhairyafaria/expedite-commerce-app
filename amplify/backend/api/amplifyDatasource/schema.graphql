@@ -1,0 +1,17 @@
+type Opportunities @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+}
+
+type Competitors @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+}
+
+type ConnectionDescription @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  challenge: String
+  strategy: String
+  competitorsId: ID
+  opportunityId: ID
+}
